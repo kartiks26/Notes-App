@@ -1,0 +1,208 @@
+{
+	"client": "Thunder Client",
+	"collectionName": "iNotebook",
+	"dateExported": "2021-10-03T06:01:58.361Z",
+	"version": "1.1",
+	"folders": [
+		{
+			"containerId": "",
+			"sortNum": 10000,
+			"name": "Authentication",
+			"_id": "763a17f0-da93-4581-8a6f-c94a6f493c6b",
+			"created": "2021-10-02T13:29:41.275Z"
+		},
+		{
+			"containerId": "",
+			"sortNum": 20000,
+			"name": "Notes",
+			"_id": "162b1828-a1ea-4f99-8fc7-a8083f006aef",
+			"created": "2021-10-02T18:41:02.691Z"
+		}
+	],
+	"requests": [
+		{
+			"containerId": "763a17f0-da93-4581-8a6f-c94a6f493c6b",
+			"sortNum": 10000,
+			"headers": [
+				{ "name": "Accept", "value": "*/*" },
+				{
+					"name": "User-Agent",
+					"value": "Thunder Client (https://www.thunderclient.io)"
+				},
+				{ "name": "Content-Type", "value": "application/json" }
+			],
+			"colId": "1cd2e0f3-be02-4550-aca0-e321f0010e54",
+			"name": "CreateNewUser",
+			"url": "http://localhost:3000/api/auth/signup",
+			"method": "POST",
+			"modified": "2021-10-02T14:15:36.117Z",
+			"created": "2021-10-02T13:29:51.096Z",
+			"_id": "4fd24f4b-8b9e-4c24-8d1c-71b0be5e9333",
+			"params": [],
+			"body": {
+				"type": "json",
+				"raw": "{\n    \"name\":\"Kunal Kulkarni\",\n    \"email\":\"Kuncaa1l@gmail.com\",\n    \"password\":\"Ganesh\"\n}",
+				"form": []
+			},
+			"tests": []
+		},
+		{
+			"containerId": "763a17f0-da93-4581-8a6f-c94a6f493c6b",
+			"sortNum": 20000,
+			"headers": [
+				{ "name": "Accept", "value": "*/*" },
+				{
+					"name": "User-Agent",
+					"value": "Thunder Client (https://www.thunderclient.io)"
+				},
+				{ "name": "Content-Type", "value": "application/json" }
+			],
+			"colId": "1cd2e0f3-be02-4550-aca0-e321f0010e54",
+			"name": "User login with credentials",
+			"url": "http://localhost:3000/api/auth/login",
+			"method": "POST",
+			"modified": "2021-10-02T18:35:47.799Z",
+			"created": "2021-10-02T18:05:29.892Z",
+			"_id": "f5bc7269-51dd-4644-9896-191d20d7ffcd",
+			"params": [],
+			"body": {
+				"type": "json",
+				"raw": " {\n   \"email\":\"Kuncaa1l@gmail.com\",\n    \"password\":\"Ganesh\"\n     \n }",
+				"form": []
+			},
+			"tests": []
+		},
+		{
+			"containerId": "763a17f0-da93-4581-8a6f-c94a6f493c6b",
+			"sortNum": 30000,
+			"headers": [
+				{ "name": "Accept", "value": "*/*" },
+				{
+					"name": "User-Agent",
+					"value": "Thunder Client (https://www.thunderclient.io)"
+				},
+				{
+					"name": "auth-token",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1ODY5ODg3YWFhZDgzMmRiYjI3NzA1In0sImlhdCI6MTYzMzE5OTc0N30.u8XtDgkh811U--6SumPYV2yW2eJd2QogTvirFx-0bEo"
+				}
+			],
+			"colId": "1cd2e0f3-be02-4550-aca0-e321f0010e54",
+			"name": "get User Data",
+			"url": "http://localhost:3000/api/auth/getUser",
+			"method": "POST",
+			"modified": "2021-10-02T18:36:13.163Z",
+			"created": "2021-10-02T18:26:39.676Z",
+			"_id": "4c3a8cac-05b8-4c7e-b58c-46af61bdc1fa",
+			"params": [],
+			"tests": []
+		},
+		{
+			"containerId": "162b1828-a1ea-4f99-8fc7-a8083f006aef",
+			"sortNum": 40000,
+			"headers": [
+				{ "name": "Accept", "value": "*/*" },
+				{
+					"name": "User-Agent",
+					"value": "Thunder Client (https://www.thunderclient.io)"
+				},
+				{
+					"name": "auth-token",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1ODY5ODg3YWFhZDgzMmRiYjI3NzA1In0sImlhdCI6MTYzMzE5OTc0N30.u8XtDgkh811U--6SumPYV2yW2eJd2QogTvirFx-0bEo"
+				}
+			],
+			"colId": "1cd2e0f3-be02-4550-aca0-e321f0010e54",
+			"name": "fetch All Notes",
+			"url": "http://localhost:3000/api/notes/fetchAllNotes",
+			"method": "GET",
+			"modified": "2021-10-02T18:50:40.197Z",
+			"created": "2021-10-02T18:41:12.276Z",
+			"_id": "51d9a55e-bf6a-404b-b17e-cba38fec1aad",
+			"params": [],
+			"tests": []
+		},
+		{
+			"containerId": "162b1828-a1ea-4f99-8fc7-a8083f006aef",
+			"sortNum": 50000,
+			"headers": [
+				{ "name": "Accept", "value": "*/*" },
+				{
+					"name": "User-Agent",
+					"value": "Thunder Client (https://www.thunderclient.io)"
+				},
+				{
+					"name": "auth-token",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1ODY5ODg3YWFhZDgzMmRiYjI3NzA1In0sImlhdCI6MTYzMzE5OTc0N30.u8XtDgkh811U--6SumPYV2yW2eJd2QogTvirFx-0bEo"
+				},
+				{ "name": "Content-Type", "value": "application/json" }
+			],
+			"colId": "1cd2e0f3-be02-4550-aca0-e321f0010e54",
+			"name": "Add Note",
+			"url": "http://localhost:3000/api/notes/addNote",
+			"method": "POST",
+			"modified": "2021-10-02T19:25:44.692Z",
+			"created": "2021-10-02T19:05:41.085Z",
+			"_id": "f41f1ac0-6dae-42ef-b0f6-18641bede50f",
+			"params": [],
+			"body": {
+				"type": "json",
+				"raw": "{\n    \"title\":\"Title 1\",\n    \"description\":\"Hello World\",\n    \"tag\":\"Done\"\n}",
+				"form": []
+			},
+			"tests": []
+		},
+		{
+			"containerId": "162b1828-a1ea-4f99-8fc7-a8083f006aef",
+			"sortNum": 60000,
+			"headers": [
+				{ "name": "Accept", "value": "*/*" },
+				{
+					"name": "User-Agent",
+					"value": "Thunder Client (https://www.thunderclient.io)"
+				},
+				{
+					"name": "auth-token",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1ODY5ODg3YWFhZDgzMmRiYjI3NzA1In0sImlhdCI6MTYzMzE5OTc0N30.u8XtDgkh811U--6SumPYV2yW2eJd2QogTvirFx-0bEo"
+				},
+				{ "name": "Content-Type", "value": "application/json" }
+			],
+			"colId": "1cd2e0f3-be02-4550-aca0-e321f0010e54",
+			"name": "Update Note",
+			"url": "http://localhost:3000/api/notes/updateNote/6158ae084547c95e6d2ab5dd",
+			"method": "PUT",
+			"modified": "2021-10-02T19:37:01.573Z",
+			"created": "2021-10-02T19:21:53.363Z",
+			"_id": "c93ac897-47d2-4ae7-b9d4-0eb40b00d3c8",
+			"params": [],
+			"body": {
+				"type": "json",
+				"raw": "{\n    \"title\":\"Updated seconf\",\n    \"description\":\"Hello World\"\n}",
+				"form": []
+			},
+			"tests": []
+		},
+		{
+			"containerId": "162b1828-a1ea-4f99-8fc7-a8083f006aef",
+			"sortNum": 70000,
+			"headers": [
+				{ "name": "Accept", "value": "*/*" },
+				{
+					"name": "User-Agent",
+					"value": "Thunder Client (https://www.thunderclient.io)"
+				},
+				{
+					"name": "auth-token",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1ODY5ODg3YWFhZDgzMmRiYjI3NzA1In0sImlhdCI6MTYzMzE5OTc0N30.u8XtDgkh811U--6SumPYV2yW2eJd2QogTvirFx-0bEo"
+				}
+			],
+			"colId": "1cd2e0f3-be02-4550-aca0-e321f0010e54",
+			"name": "Delete Node",
+			"url": "http://localhost:3000/api/notes/deleteNote/6158b720f29eae851b3d1b31",
+			"method": "DELETE",
+			"modified": "2021-10-02T19:47:38.537Z",
+			"created": "2021-10-02T19:40:07.742Z",
+			"_id": "8d394341-3360-45d3-a26c-54cd8fc92254",
+			"params": [],
+			"tests": []
+		}
+	]
+}
